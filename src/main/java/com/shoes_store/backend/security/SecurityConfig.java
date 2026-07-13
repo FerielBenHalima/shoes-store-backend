@@ -32,6 +32,7 @@ public class SecurityConfig {
             )
 
             .authorizeHttpRequests(auth -> auth
+                .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
 
                 // Public — no token needed
                 .requestMatchers("/api/auth/**").permitAll()

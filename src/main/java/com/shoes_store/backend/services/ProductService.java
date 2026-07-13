@@ -99,7 +99,6 @@ public class ProductService {
                 .color(v.getColor())
                 .colorHex(v.getColorHex())
                 .stock(v.getStock())
-                .sku(v.getSku())
                 .product(product)
                 .build())
             .collect(Collectors.toList());
@@ -162,7 +161,6 @@ public class ProductService {
                         .color(v.getColor())
                         .colorHex(v.getColorHex())
                         .stock(v.getStock())
-                        .sku(v.getSku())
                         .build())
                     .collect(Collectors.toList()))
             .build();
@@ -206,7 +204,6 @@ public class ProductService {
                     .color(v.getColor())
                     .colorHex(v.getColorHex())
                     .stock(v.getStock())
-                    .sku(v.getSku())
                     .product(product)
                     .build())
                 .collect(Collectors.toList());

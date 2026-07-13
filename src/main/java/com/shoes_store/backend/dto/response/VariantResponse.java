@@ -11,5 +11,4 @@ public class VariantResponse {
     private String color;
     private String colorHex;
     private Integer stock;
-    private String sku;
 }

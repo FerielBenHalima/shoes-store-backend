@@ -27,8 +27,6 @@ public class Variant {
     @Column(nullable = false)
     private Integer stock;
 
-    @Column(nullable = false, unique = true)
-    private String sku;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id", nullable = false)

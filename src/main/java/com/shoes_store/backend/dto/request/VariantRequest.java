@@ -19,6 +19,4 @@ public class VariantRequest {
     @NotNull
     private Integer stock;
 
-    @NotBlank
-    private String sku;
 }

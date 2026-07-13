@@ -38,8 +38,7 @@ public class OrderService {
 
             if (variant.getStock() < item.getQuantity()) {
                 throw new RuntimeException(
-                    "Insufficient stock for: " + variant.getSku() +
-                    " — available: " + variant.getStock() +
+                    "Insufficient stock available: " + variant.getStock() +
                     ", requested: " + item.getQuantity());
             }
 
@@ -126,7 +125,7 @@ public class OrderService {
 
                 if (variant.getStock() < item.getQuantity()) {
                     throw new RuntimeException(
-                        "Stock insuffisant: " + variant.getSku());
+                        "Stock insuffisant: ");
                 }
 
                 variant.setStock(variant.getStock() - item.getQuantity());
